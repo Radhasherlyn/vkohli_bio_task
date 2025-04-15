@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #43e97b, #38f9d7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("image1.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .login-box {
+      background:rgba(255,255,255,0.5);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .login-box h2 {
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4a90e2;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .login-box button:hover {
+      background-color: #357ab8;
+    }
+  </style>
+</head>
 <body>
-    <form action="">
- 
-    <h1>REGISTER</h1>
-    <P>
-        <input type="name"
-         placeholder="enter name"
-        name="name" id="name"required/>
-    </P>
-    <P>
-        <input type="email"
-         placeholder="enter email"
-        name="email" id="email"required/>
-    </P>
-    <P>
-        <input type="password"
-         placeholder="create password"
-        name="password" id="password"required/>
-    </P>
-    <P>
-        <input type="password"
-         placeholder="re-type password"
-        name="confirm-password" id="confirm-password"required/>
-    </P>
-    <P>
-        <input type="radio"id="male" name="gender"/>
-         <label for="male" >Male </label>
-         <input type="radio"id="female" name="gender"/>
-         <label for="female" >Female </label>
-    </P>
-    <P>
-        <input type="number"
-         placeholder="phone number"
-        name="phone number" id="phone number"required/>
-    </P>
-    <P>
-        <lable for="date of birth">date of birth</lable>
-        <input type="date"/>
-        </P>
-        <button>submit</button>
-        <a href="./login.html">click here to go login page</a>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form action="blog.html" method="get">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
     </form>
-  
+  </div>
 </body>
 </html>
